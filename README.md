@@ -5,7 +5,7 @@ Official Pytorch Implementation  of *Blur2Seq*.
 
 | **Blurry** | **Kernels** | **Blur2Seq** |
 |:------------:|:------------:|:------------:|
-| ![Imagen 1](testing_imgs/Blurry2_8_img_blurry.png) | ![Imagen 2](testing_imgs/Blurry2_8_kernels.png) | ![Imagen 3](testing_imgs/Blurry2_8_img_restored.png) |
+| ![Imagen 1](imgs/Blurry2_8_img_blurry.png) | ![Imagen 2](imgs/Blurry2_8_kernels.png) | ![Imagen 3](imgs/Blurry2_8_img_restored.png) |
 
 ## Trajectory Prediction Network Architecture
 <p align="center">
