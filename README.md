@@ -3,6 +3,10 @@
 Official Pytorch Implementation  of *Blur2Seq*. 
  
 
+| **Blurry** | **Kernels** | **Blur2Seq** |
+|:------------:|:------------:|:------------:|
+| ![Imagen 1](imgs/Blurry2_8_img_blurry.png) | ![Imagen 2](imgs/Blurry2_8_kernels.png) | ![Imagen 3](imgs/Blurry2_8_img_restored.png) |
+
 ## Trajectory Prediction Network Architecture
 <p align="center">
 <img width="900" src="imgs/two_branches.png?raw=true">
@@ -36,12 +40,18 @@ Additional options:
   
   `--resize_factor`: input image resize factor (default 1)     
   
-  `--focal_length`: given focal length. By default is assummed f=max(H,W). For Kohler dataset images `f=3900`.
+  `--focal_length`: given focal length. By default, it is assumed that f=max(H,W). For Kohler dataset images `f=3900`.
   
 
-<p align="center">
-<img width="900" src="imgs/sat_images_examples.png?raw=true">
-  </p>
+## Training Set Generation
+
+We provide the code we used to generate the training set. The synthetic dataset is constructed using images from the [COCO](https://cocodataset.org/#download) dataset (Lin et al. (2014)), though
+any other dataset of sharp images could be used.
+
+```
+python -m training_pairs_generation.generate_sample_training_paires -sf ./training_pairs_generation/sample_data/sharp -pf ./training_pairs_generation/sample_data/positions/ -o ./training_pairs_generation/sample_training_pairs
+```
+
 
 ## Aknowledgments 
 We thank the authors of [Deep Model-Based Super-Resolution with Non-Uniform Blur](https://arxiv.org/abs/2204.10109) for the Blind Deconvolution Network provided in https://github.com/claroche-r/DMBSR 
