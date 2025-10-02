@@ -43,9 +43,15 @@ Additional options:
   `--focal_length`: given focal length. By default, it is assumed that f=max(H,W). For Kohler dataset images `f=3900`.
   
 
-## Training set generation
+## Training Set Generation
 
-We provide ... 
+We provide the code we used to generate the training set. The synthetic dataset is constructed using images from the [COCO](https://cocodataset.org/#download) dataset (Lin et al. (2014)), though
+any other dataset of sharp images could be used.
+
+```
+python -m training_pairs_generation.generate_sample_training_paires -sf ./training_pairs_generation/sample_data/sharp -pf ./training_pairs_generation/sample_data/positions/ -o ./training_pairs_generation/sample_training_pairs
+```
+
 
 ## Aknowledgments 
 We thank the authors of [Deep Model-Based Super-Resolution with Non-Uniform Blur](https://arxiv.org/abs/2204.10109) for the Blind Deconvolution Network provided in https://github.com/claroche-r/DMBSR 
