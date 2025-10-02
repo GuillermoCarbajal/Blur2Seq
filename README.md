@@ -22,8 +22,12 @@ Official Pytorch Implementation  of *Blur2Seq*.
 ```
 git clone https://github.com/GuillermoCarbajal/Blur2Seq.git
 ```
-
-
+### Install dependencies
+```
+conda create -n Blur2Seq
+conda activate Blur2Seq
+pip install -r requirements.txt
+```
 ### Download deblurring models
 
 [Trajectory Prediction Network](https://iie.fing.edu.uy/~carbajal/Blur2Seq/camera_shake_epoch25_epoch35_epoch50_epoch10_epoch5_epoch25_epoch25_epoch25_epoch27_epoch24_epoch4_epoch10_epoch22_epoch23_epoch90.pkl)           
