@@ -24,7 +24,7 @@ git clone https://github.com/GuillermoCarbajal/Blur2Seq.git
 ```
 ### Install dependencies
 ```
-conda create -n Blur2Seq
+conda create -n Blur2Seq python=3.8
 conda activate Blur2Seq
 pip install -r requirements.txt
 ```
