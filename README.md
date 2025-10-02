@@ -40,12 +40,12 @@ Additional options:
   
   `--resize_factor`: input image resize factor (default 1)     
   
-  `--focal_length`: given focal length. By default is assummed f=max(H,W). For Kohler dataset images `f=3900`.
+  `--focal_length`: given focal length. By default, it is assumed that f=max(H,W). For Kohler dataset images `f=3900`.
   
 
-<p align="center">
-<img width="900" src="imgs/sat_images_examples.png?raw=true">
-  </p>
+## Training set generation
+
+We provide ... 
 
 ## Aknowledgments 
 We thank the authors of [Deep Model-Based Super-Resolution with Non-Uniform Blur](https://arxiv.org/abs/2204.10109) for the Blind Deconvolution Network provided in https://github.com/claroche-r/DMBSR 
